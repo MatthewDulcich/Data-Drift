@@ -15,15 +15,23 @@ Move the `train_labels.npy` and `test_labels.npy` into the `CIFAR10/` directory 
 
 ## Setup
 
-Make sure to have Python 3.11.9 installed. If you are on a Mac, start the venv with:
+Make sure to have Python 3.11.9 installed. If you are on a Mac, start the venv with the command below, then skip to the Open file section:
 
 ```bash
 source python311_venv/bin/activate
 ```
+
+If you don't have a mac or the venv doesen't work you can make one with
+
+```bash
+python3.11 -m venv python311_venv
+```
+
 Then install the `requirements.txt`
 
 ```bash
 pip install -r requirements.txt
+pip install tensorflow
 ```
 
 Open `data-drift.ipynb`
